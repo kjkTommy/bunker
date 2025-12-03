@@ -579,6 +579,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nabla/vite-plugin-eslint@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "@nabla/vite-plugin-eslint@npm:2.0.6"
+  dependencies:
+    "@types/eslint": "npm:*"
+    chalk: "npm:^4"
+    debug: "npm:^4"
+  peerDependencies:
+    eslint: ^8.45 || ^9
+    vite: ^4 || ^5 || ^6 || ^7
+  checksum: 10c0/37ad6f6928b3fd3fb9314ffd3a42f16226135e928a117c9426fca93257555158b167aaf54b6ce754f7eca68ba85d29b0150fbdf8b3fc44e3bd4f4cbc063d7cf8
+  languageName: node
+  linkType: hard
+
 "@npmcli/agent@npm:^4.0.0":
   version: 4.0.0
   resolution: "@npmcli/agent@npm:4.0.0"
@@ -803,14 +817,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:1.0.8, @types/estree@npm:^1.0.6":
+"@types/eslint@npm:*":
+  version: 9.6.1
+  resolution: "@types/eslint@npm:9.6.1"
+  dependencies:
+    "@types/estree": "npm:*"
+    "@types/json-schema": "npm:*"
+  checksum: 10c0/69ba24fee600d1e4c5abe0df086c1a4d798abf13792d8cfab912d76817fe1a894359a1518557d21237fbaf6eda93c5ab9309143dee4c59ef54336d1b3570420e
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*, @types/estree@npm:1.0.8, @types/estree@npm:^1.0.6":
   version: 1.0.8
   resolution: "@types/estree@npm:1.0.8"
   checksum: 10c0/39d34d1afaa338ab9763f37ad6066e3f349444f9052b9676a7cc0252ef9485a41c6d81c9c4e0d26e9077993354edf25efc853f3224dd4b447175ef62bdcc86a5
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:^7.0.15":
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
@@ -1111,6 +1135,7 @@ __metadata:
   resolution: "bunker@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.39.1"
+    "@nabla/vite-plugin-eslint": "npm:^2.0.6"
     "@types/node": "npm:^24.10.1"
     "@types/react": "npm:^19.2.5"
     "@types/react-dom": "npm:^19.2.3"
@@ -1124,7 +1149,7 @@ __metadata:
     react: "npm:^19.2.0"
     react-dom: "npm:^19.2.0"
     typescript: "npm:~5.9.3"
-    typescript-eslint: "npm:^8.46.4"
+    typescript-eslint: "npm:^8.48.1"
     vite: "npm:^7.2.4"
   languageName: unknown
   linkType: soft
@@ -1162,7 +1187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0":
+"chalk@npm:^4, chalk@npm:^4.0.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -1227,7 +1252,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4":
+"debug@npm:4, debug@npm:^4, debug@npm:^4.1.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4":
   version: 4.4.3
   resolution: "debug@npm:4.4.3"
   dependencies:
@@ -2524,7 +2549,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.46.4":
+"typescript-eslint@npm:^8.48.1":
   version: 8.48.1
   resolution: "typescript-eslint@npm:8.48.1"
   dependencies:
